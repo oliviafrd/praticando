@@ -36,7 +36,7 @@ jobs:
     - uses: mr-smithers-excellent/docker-build-push@v6
       name: Build & push Docker image
       with:
-       image: ${{ secrets.DOCKER_USERNAME }}/exercicioPipeline
+       image: oliviafarias/exercicioPipeline
        tags: v1, latest
        registry: docker.io
        dockerfile: dockerfile

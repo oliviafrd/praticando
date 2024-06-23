@@ -36,7 +36,7 @@ jobs:
       name: Build & push Docker image
       with:
        image: oliviafarias/exerciciopipeline
-       tags: ${{github.run_number}}, ${{steps.ver.outputs.version}}
+       tags: ${{github.run_number}} - dev
        registry: docker.io
        dockerfile: dockerfile
        username: ${{secrets.DOCKER_USERNAME}}
